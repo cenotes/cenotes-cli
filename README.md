@@ -65,4 +65,8 @@ See [design](https://cenotes.readthedocs.io/en/latest/design.html)
     - For linux: `export PYTHONPATH=<path-to-the-cloned-repo>:$PYTHONPATH`
   - See available options
     - `python cenotes_cli/cli.py --help`
-
+2. Installing the python package
+  - Ideally inside a virtualenv
+    - `pip install cenotes-cli`
+  - See available options
+    - `cenotes-cli --help`
