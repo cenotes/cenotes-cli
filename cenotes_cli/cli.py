@@ -15,7 +15,8 @@ from cenotes_cli.cenotes_lib import exceptions, crypto
 @click.option('--text', '-t', prompt="Enter payload or cleartext",
               help="The ciphertext for decryption mode "
                    "or the cleartext for encryption mode")
-@click.option('--key', '-k',
+@click.option('--key', '-k', default="",
+              prompt="Enter a password to generate the key",
               help="The key for decryption mode "
                    "or the password to generate key for encryption mode")
 def main(decrypt, encrypt, text, key):
@@ -26,6 +27,7 @@ def main(decrypt, encrypt, text, key):
               "Decrypted note: {0}"
               .format(crypto.decrypt_note(text, key).decode()))
     elif encrypt:
+        print(key)
         print("Encryption was successful!\n"
               "Encrypted payload: {0}\n"
               "Key to decrypt: {1}"
