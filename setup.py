@@ -3,7 +3,7 @@
 
 """The setup script."""
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
@@ -33,7 +33,10 @@ setup(
     author="John Paraskevopoulos",
     author_email='ioparaskev@gmail.com',
     url='https://github.com/ioparaskev/cenotes_cli',
-    packages=find_packages(include=['cenotes_cli']),
+    packages=[
+        'cenotes_cli',
+        'cenotes_cli.cenotes_lib'
+    ],
     entry_points={
         'console_scripts': [
             'cenotes-cli=cenotes_cli.cli:main'
