@@ -34,9 +34,9 @@ setup(
     author_email='ioparaskev@gmail.com',
     url='https://github.com/ioparaskev/cenotes_cli',
     packages=[
-        'cenotes_cli',
-        'cenotes_cli.cenotes_lib'
+        'cenotes_lib'
     ],
+    package_dir={'cenotes_lib': 'cenotes_cli/cenotes_lib'},
     entry_points={
         'console_scripts': [
             'cenotes-cli=cenotes_cli.cli:main'
@@ -48,14 +48,14 @@ setup(
     zip_safe=False,
     keywords='cenotes_cli',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
     test_suite='tests',
     tests_require=test_requirements,
