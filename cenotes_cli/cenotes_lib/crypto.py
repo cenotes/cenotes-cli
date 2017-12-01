@@ -1,8 +1,8 @@
 import base64
 from nacl import utils as nacl_utils, secret, pwhash
 
-from cenotes_cli.cenotes_lib.exceptions import InvalidUsage
-from cenotes_cli.cenotes_lib.helpers import enforce_bytes, safe_decryption
+from .exceptions import InvalidUsage
+from .helpers import enforce_bytes, safe_decryption
 
 
 def fetch_kdf_params():

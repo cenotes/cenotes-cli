@@ -19,3 +19,8 @@ History
 * Expose only library packages
 * Set status Pre-Alpha -> Beta
 * Add python 3.6 support in package
+
+0.2.1 (2017-12-01)
+------------------
+
+* Fix imports to be relative inside lib package

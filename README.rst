@@ -77,7 +77,7 @@ How to run
 
   -  See available options
 
-   -  ``python cenotes_cli/cli.py --help``
+     -  ``python cenotes_cli/cli.py --help``
 
 2. Installing the python package
 

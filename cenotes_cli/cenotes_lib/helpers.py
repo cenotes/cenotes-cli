@@ -1,7 +1,7 @@
 from functools import wraps
 from nacl.exceptions import CryptoError
 
-from cenotes_cli.cenotes_lib.exceptions import CenotesError
+from .exceptions import CenotesError
 
 
 def make_type(mtype, *args):
