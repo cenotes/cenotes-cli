@@ -44,12 +44,20 @@ def enforce_bytes(nof_args=1, kwargs_names=tuple(["test"])):
     return enforcer
 
 
-def safe_decryption(func):
-    @wraps(func)
-    def safe_decrypt(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except (CryptoError, UnicodeDecodeError,
-                ValueError, TypeError) as err:
-            raise CenotesError(err)
-    return safe_decrypt
+def safe_decryption(extra_exceptions=tuple()):
+    def run_safely(func):
+        @wraps(func)
+        def safe_decrypt(*args, **kwargs):
+            try:
+                return func(*args, **kwargs)
+            except ((CryptoError, UnicodeDecodeError,
+                     ValueError, TypeError) + tuple(extra_exceptions)) as err:
+                raise CenotesError(err)
+        return safe_decrypt
+
+    if not callable(extra_exceptions):
+        return run_safely
+    else:
+        fn = extra_exceptions
+        extra_exceptions = tuple()
+        return run_safely(fn)

@@ -52,3 +52,20 @@ def test_safe_decryption():
 
     with pytest.raises(exceptions.CenotesError):
         raise_a_crypto_error()
+
+
+def test_safe_decryption_custom_exceptions():
+    @helpers.safe_decryption
+    def raise_an_error():
+        raise IndentationError
+
+    with pytest.raises(IndentationError):
+        raise_an_error()
+
+    @helpers.safe_decryption(extra_exceptions=(IndentationError,))
+    def raise_another_error():
+        raise IndentationError
+
+    with pytest.raises(exceptions.CenotesError):
+        raise_another_error()
+

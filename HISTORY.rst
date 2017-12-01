@@ -24,3 +24,8 @@ History
 ------------------
 
 * Fix imports to be relative inside lib package
+
+0.3.0 (2017-12-01)
+------------------
+
+* Add support for custom exceptions in ``safe_decryption`` decorator
