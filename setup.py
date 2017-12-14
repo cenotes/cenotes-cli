@@ -33,10 +33,10 @@ setup(
     author="John Paraskevopoulos",
     author_email='ioparaskev@gmail.com',
     url='https://github.com/ioparaskev/cenotes_cli',
-    packages=[
-        'cenotes_lib',
-    ],
-    package_dir={'cenotes_lib': 'cenotes_lib'},
+    package_dir={
+        'cenotes_lib': 'cenotes_lib',
+        'cenotes_cli': 'cenotes_cli'
+    },
     entry_points={
         'console_scripts': [
             'cenotes-cli=cenotes_cli.cli:main'
