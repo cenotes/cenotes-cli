@@ -6,7 +6,7 @@ CENotes CLI
 
 **C(ryptographical) E(xpendable) Notes**
 
-**Libraries and Command Line Interface**
+**Command Line Interface**
 
 -  Free software: GNU General Public License v3
 
@@ -91,7 +91,7 @@ How to run
 .. _Backend: https://github.com/cenotes/cenotes
 .. _Frontend: https://github.com/cenotes/cenotes-reaction
 .. _CLI: https://github.com/cenotes/cenotes-cli
-.. _Libraries:: https://github.com/cenotes/cenotes-lib
+.. _Libraries: https://github.com/cenotes/cenotes-lib
 .. _Documentation: https://cenotes.readthedocs.io
 .. _Backend Design: https://cenotes.readthedocs.io/en/latest/design.html
 .. _here: https://github.com/cenotes/cenotes
