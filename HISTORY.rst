@@ -2,16 +2,15 @@
 History
 =======
 
-0.1.0 (2017-11-30)
+0.3.0 (2017-12-01)
 ------------------
 
-* First release on PyPI.
+* Add support for custom exceptions in ``safe_decryption`` decorator
 
-
-0.1.1 (2017-11-30)
+0.2.1 (2017-12-01)
 ------------------
 
-* Fix invalid packaged files.
+* Fix imports to be relative inside lib package
 
 0.2.0 (2017-12-01)
 ------------------
@@ -20,12 +19,12 @@ History
 * Set status Pre-Alpha -> Beta
 * Add python 3.6 support in package
 
-0.2.1 (2017-12-01)
+0.1.1 (2017-11-30)
 ------------------
 
-* Fix imports to be relative inside lib package
+* Fix invalid packaged files.
 
-0.3.0 (2017-12-01)
+0.1.0 (2017-11-30)
 ------------------
 
-* Add support for custom exceptions in ``safe_decryption`` decorator
+* First release on PyPI.
