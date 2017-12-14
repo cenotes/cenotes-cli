@@ -4,7 +4,7 @@
 
 import click
 
-from cenotes_cli.cenotes_lib import exceptions, crypto
+from cenotes_lib import crypto, exceptions
 
 
 @click.command()

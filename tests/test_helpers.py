@@ -1,7 +1,7 @@
 import nacl.exceptions
 import pytest
 
-from cenotes_cli.cenotes_lib import helpers, exceptions
+from cenotes_lib import exceptions, helpers
 
 
 def test_enforce_bytes():

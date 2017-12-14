@@ -1,6 +1,6 @@
 import pytest
 
-from cenotes_cli.cenotes_lib import crypto
+from cenotes_lib import crypto
 
 
 @pytest.fixture(scope="session", name="testing_key")

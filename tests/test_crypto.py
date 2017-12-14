@@ -3,7 +3,7 @@ import nacl.exceptions
 import nacl.secret
 import pytest
 
-from cenotes_cli.cenotes_lib import exceptions, crypto
+from cenotes_lib import exceptions, crypto
 
 
 def assert_decrypt(payload, key, plaintext):
