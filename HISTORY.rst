@@ -4,6 +4,10 @@ History
 
 0.3.0 (2017-12-01)
 ------------------
+* Remove internal cenotes-lib and use the new external cenotes-lib package
+
+0.3.0 (2017-12-01)
+------------------
 
 * Add support for custom exceptions in ``safe_decryption`` decorator
 
