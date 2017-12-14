@@ -8,12 +8,11 @@ name = "pypi"
 [packages]
 
 click = "*"
-pynacl = {version = ">=1.2.0"}
+cenotes-lib = {version = ">=0.1.0"}
 
 
 [dev-packages]
 
-pytest = "*"
+flake8 = "*"
 tox = "*"
-coverage = "*"
 bumpversion = "*"

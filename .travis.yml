@@ -1,21 +1,8 @@
-env:
-  matrix:
-    - TOXENV=py
-    - TOXENV=flake8
 install:
   - pip install -U tox
 language:
   - python
 python:
-  - 3.4
-  - 3.5
   - 3.6
 script:
-  - tox -e ${TOXENV}
-services:
-  - mysql
-  - postgresql
-before_script:
-  - if [[ $DB = 'mysql' ]]; then mysql -e 'CREATE DATABASE IF NOT EXISTS test_tox_db;'; fi
-  - if [[ $DB = 'postgresql' ]]; then psql -c 'DROP DATABASE IF EXISTS test_tox_db;' -U postgres; fi
-  - if [[ $DB = 'postgresql' ]]; then psql -c 'CREATE DATABASE test_tox_db;' -U postgres; fi
+  - tox -e flake8

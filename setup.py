@@ -3,7 +3,7 @@
 
 """The setup script."""
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -13,16 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
-    'pynacl>=1.2.0',
-]
-
-setup_requirements = [
-]
-
-test_requirements = [
-    'pytest',
-    'tox',
-    'coverage'
+    'cenotes-lib>=0.1.0'
 ]
 
 setup(
@@ -33,10 +24,7 @@ setup(
     author="John Paraskevopoulos",
     author_email='ioparaskev@gmail.com',
     url='https://github.com/ioparaskev/cenotes_cli',
-    package_dir={
-        'cenotes_lib': 'cenotes_lib',
-        'cenotes_cli': 'cenotes_cli'
-    },
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     entry_points={
         'console_scripts': [
             'cenotes-cli=cenotes_cli.cli:main'
@@ -57,7 +45,4 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    test_suite='tests',
-    tests_require=test_requirements,
-    setup_requires=setup_requirements,
 )

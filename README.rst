@@ -1,8 +1,8 @@
-CENotes library and CLI
-=======================
+CENotes CLI
+===========
 
-.. image:: https://travis-ci.org/ioparaskev/cenotes-cli.svg?branch=master
-    :target: https://travis-ci.org/ioparaskev/cenotes-cli
+.. image:: https://travis-ci.org/cenotes/cenotes-cli.svg?branch=master
+    :target: https://travis-ci.org/cenotes/cenotes-cli
 
 **C(ryptographical) E(xpendable) Notes**
 
@@ -16,7 +16,8 @@ CENotes library and CLI
 
    -  `Backend`_
    -  `Frontend`_
-   -  `CLI and Libraries`_
+   -  `CLI`_
+   -  `Libraries`_
 
 -  `Documentation`_
 
@@ -25,16 +26,13 @@ CENotes library and CLI
 What is this?
 -------------
 
-This is a **cli and library** project to support encryption/decryption
+This is a **cli** project to support encryption/decryption
 of expendable notes
-
-An example of a backend that uses the libraries provided here can be
-found at https://cenot.es
 
 What this isn’t
 ---------------
 
-UI/Frontend/Backend. This is a **cli/library** project. Frontend and
+UI/Frontend/Backend. This is a **cli** project. Frontend and
 backend solutions are different projects. The reason for this is to
 allow flexibility in frontend / backend choice and to avoid huge bundle
 projects.
@@ -63,7 +61,7 @@ How to run
 
   -  Clone the repo
 
-     -  ``git clone https://github.com/ioparaskev/cenotes-cli.git``
+     -  ``git clone https://github.com/cenotes/cenotes-cli.git``
 
   -  Install the requirements with pipenv
 
@@ -90,12 +88,13 @@ How to run
      -  ``cenotes-cli --help``
 
 .. _Backend & Frontend Demo: https://cenot.es
-.. _Backend: https://github.com/ioparaskev/cenotes
-.. _Frontend: https://github.com/ioparaskev/cenotes-reaction
-.. _CLI and Libraries: https://github.com/ioparaskev/cenotes-cli
+.. _Backend: https://github.com/cenotes/cenotes
+.. _Frontend: https://github.com/cenotes/cenotes-reaction
+.. _CLI: https://github.com/cenotes/cenotes-cli
+.. _Libraries:: https://github.com/cenotes/cenotes-lib
 .. _Documentation: https://cenotes.readthedocs.io
 .. _Backend Design: https://cenotes.readthedocs.io/en/latest/design.html
-.. _here: https://github.com/ioparaskev/cenotes
+.. _here: https://github.com/cenotes/cenotes
 .. _pynacl: https://pynacl.readthedocs.io/en/latest/
 .. _design: https://cenotes.readthedocs.io/en/latest/design.html
 
