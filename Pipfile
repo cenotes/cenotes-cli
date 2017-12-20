@@ -9,10 +9,12 @@ name = "pypi"
 
 click = "*"
 cenotes-lib = {version = ">=0.1.0"}
+requests = {version = ">=2.18.0"}
+python-dateutil = {version = ">=2.6.0"}
 
 
 [dev-packages]
 
-flake8 = "*"
+"flake8" = "*"
 tox = "*"
 bumpversion = "*"

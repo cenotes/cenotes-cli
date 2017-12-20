@@ -13,7 +13,9 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0',
-    'cenotes-lib>=0.1.0'
+    'cenotes-lib>=0.1.0',
+    'requests>=2.18.0',
+    'python-dateutil>=2.6.0'
 ]
 
 setup(
