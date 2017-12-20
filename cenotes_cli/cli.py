@@ -19,7 +19,7 @@ from cenotes_cli.remote import uploader, fetch as fetcher
 @click.option('--encrypt', '-e', is_flag=True, default=False,
               help="Choose this option to encrypt a note")
 @click.option('--fetch', '-f', is_flag=True, default=False,
-              help="Choose this option to decrypt an uploaded note")
+              help="Choose this option to fetch an uploaded note")
 @click.option('--upload', '-u', is_flag=True, default=False,
               help="Choose this option to upload a note")
 @click.option('--server', '-s', type=str, help="URL to cenotes server",

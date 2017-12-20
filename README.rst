@@ -46,6 +46,10 @@ Features
 --------
 
 -  Symmetric encryption of notes using the `pynacl`_ project
+-  Local encryption & decryption of a note
+-  Support to store a note to a cenotes server instance
+-  Support to fetch a note from a cenotes server instance
+-  Support for custom cenotes server url
 
 How does this work?
 -------------------
