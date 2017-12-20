@@ -2,7 +2,16 @@
 History
 =======
 
-0.3.0 (2017-12-01)
+0.5.0 (2017-12-20)
+------------------
+* Add support to upload a note to a cenotes instance
+* Add support to download a note from a cenotes instance
+* Add support to define custom cenotes instance url
+* Extract actions to different modules (crypto/remote)
+* Add dependency for requests & dateutil
+
+
+0.4.0 (2017-12-01)
 ------------------
 * Remove internal cenotes-lib and use the new external cenotes-lib package
 
