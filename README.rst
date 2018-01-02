@@ -29,7 +29,7 @@ What is this?
 This is a **cli** project to support encryption/decryption
 of expendable notes
 
-What this isn’t
+What this isn't
 ---------------
 
 UI/Frontend/Backend. This is a **cli** project. Frontend and
